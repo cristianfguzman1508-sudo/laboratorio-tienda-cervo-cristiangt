@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout · Cervo</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="nav"><div class="nav-in"><a class="logo" href="index.html">Cervo</a><nav><a href="index.html">Catálogo</a><a href="carrito.html">Carrito <span id="badge" class="badge">0</span></a></nav></div></header>
+<main class="wrap">
+<h1>Checkout</h1>
+<div class="cols"><div>
+<section id="paso1" class="panel"><h2>1 · Envío</h2>
+<label for="nombre">Nombre (ficticio, no se guarda)</label><input id="nombre" type="text" maxlength="40" placeholder="Ej: Cliente Demo" autocomplete="off">
+<label for="pais">País</label><select id="pais"></select>
+<fieldset><legend>Servicio de envío</legend>
+<label class="radio"><input type="radio" name="servicio" value="Estándar" checked>Estándar</label>
+<label class="radio"><input type="radio" name="servicio" value="Express">Express</label></fieldset>
+<p id="envioInfo" class="muted"></p><p id="err1" class="err"></p>
+<button id="btnEnvio" class="btn" type="button">Continuar al pago</button></section>
+<section id="paso2" class="panel" hidden><h2>2 · Pago simulado</h2>
+<fieldset><legend>Método de pago</legend>
+<label class="radio"><input type="radio" name="pago" value="Tarjeta de crédito" checked>Tarjeta de crédito</label>
+<label class="radio"><input type="radio" name="pago" value="PSE">PSE</label>
+<label class="radio"><input type="radio" name="pago" value="Nequi">Nequi</label>
+<label class="radio"><input type="radio" name="pago" value="PayPal">PayPal</label></fieldset>
+<p class="muted">No se piden ni se guardan datos de tarjeta ni de contacto.</p>
+<button id="btnPagar" class="btn" type="button">Pagar (simulado)</button> <button id="btnVolver" class="link" type="button">← Volver al envío</button></section>
+</div><aside class="panel"><h2>Resumen</h2><div id="resumen"></div></aside></div>
+</main>
+<footer class="pie"><p>Cervo es un sitio académico de simulación: no procesa pagos ni guarda datos personales. Usa Google Analytics 4 para medir la navegación con fines didácticos.</p></footer>
+<script src="js/config.js"></script>
+<script src="js/productos.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/analytics.js"></script>
+<script src="js/pagina-checkout.js"></script>
+</body>
+</html>
