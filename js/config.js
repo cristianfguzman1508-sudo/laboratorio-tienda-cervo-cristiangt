@@ -10,6 +10,6 @@
                   false -> envío normal (no se manda debug_mode).
    ========================================================================== */
 window.TIENDA_CONFIG = {
-  GA_MEASUREMENT_ID: "G-XXXXXXXXXX", // <- pega aquí tu ID de medición (entre comillas)
+  GA_MEASUREMENT_ID: "G-ERGQE49Q4C", // <- pega aquí tu ID de medición (entre comillas)
   DEBUG_MODE: true                   // <- true para DebugView, false para producción
 };
